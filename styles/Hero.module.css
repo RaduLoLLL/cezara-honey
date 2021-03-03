@@ -1,0 +1,39 @@
+.hero {
+  position: relative;
+}
+.cta {
+  position: absolute;
+  bottom: 100px;
+  right: 100px;
+  max-width: 500px;
+  color: white;
+}
+.cta h1 {
+  font-size: 64px;
+  font-weight: 600;
+}
+.cta h3 {
+  font-size: 32px;
+}
+.cta p {
+  font-size: 16px;
+}
+.cta button {
+  font-size: 32px;
+  font-weight: 600;
+  background-color: #055fb0;
+  border: none;
+  color: white;
+  padding: 10px 70px;
+  border-radius: 20px;
+  margin-bottom: -10px;
+  transition: all 0.7s ease;
+}
+.cta button:hover {
+  background-color: #ff9f00;
+  color: #055fb0;
+  transition: all 0.7s ease;
+}
+.image {
+  margin-top: 25px;
+}
