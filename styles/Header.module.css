@@ -1,28 +1,13 @@
-.header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-top: 10px;
+.navLinks {
+  color: black !important;
+  font-size: 28px;
+  text-transform: capitalize !important;
+  font-family: "Poppins", sans-serif;
+}
+.navLinks:hover {
+  color: #ff9f00 !important;
 }
 
-.nav {
-  display: flex;
-  list-style: none;
-  font-size: 32px;
-  font-weight: 100;
-}
-.nav li {
-  margin: 0px 25px;
-}
-.nav li:hover {
-  color: #ff9f00;
-}
-
-.image {
-  margin: 0px 25px;
-  display: inline;
-  cursor: pointer;
-}
 .activeLink {
-  color: #ff9f00;
+  color: #ff9f00 !important;
 }

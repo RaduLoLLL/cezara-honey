@@ -1,17 +1,17 @@
 {
-  "name": "nextjs",
+  "name": "honey",
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next",
+    "dev": "next dev",
     "build": "next build",
     "start": "next start"
   },
   "dependencies": {
-    "next": "^10.0.7",
-    "react": "^17.0.1",
-    "react-dom": "^17.0.1",
-    "react-intersection-observer": "^8.31.0",
-    "react-spring": "^8.0.27"
+    "bootstrap": "^4.6.0",
+    "next": "10.0.8",
+    "react": "17.0.1",
+    "react-bootstrap": "^1.5.2",
+    "react-dom": "17.0.1"
   }
 }

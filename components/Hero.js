@@ -1,39 +1,31 @@
-import Image from "next/image";
-import styles from "../styles/Hero.module.css";
-import { useSpring, animated } from "react-spring";
+import Link from "next/link";
+import style from "../styles/Hero.module.css";
+import { Button } from "react-bootstrap";
+
 export default function Hero() {
-  const imageProps = useSpring({
-    opacity: 1,
-    from: { opacity: 0 },
-    config: { duration: 700 },
-  });
-  const contentProps = useSpring({
-    opacity: 1,
-    from: { opacity: 0 },
-    config: { duration: 500 },
-    delay: 500,
-  });
   return (
-    <div className={styles.hero}>
-      <div className={styles.image}>
-        <animated.div style={imageProps}>
-          {" "}
-          <Image src="/Hero-Image.png" width={1920} height={970} />
-        </animated.div>
-      </div>
-      <animated.div style={contentProps}>
-        <div className={styles.cta}>
-          <h1>Miere Naturală</h1>
-          <h3>Nou!</h3>
-          <p>
+    <div className={style.heroSection}>
+      <div
+        className={` d-flex flex-column align-items-md-end justify-content-end align-items-sm-center ${style.container}`}
+      >
+        <div className={`${style.content} text-white`}>
+          <h1 className={`${style.heading}`}>Miere Naturala</h1>
+          <h2 className={`${style.subHeading}`}>Nou!</h2>
+          <p className={`${style.description}`}>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris
             lacinia finibus dapibus. Maecenas non efficitur orci, eget lobortis
             sapien. Curabitur elit quam, gravida quis leo ut, tempor aliquam
             elit.
           </p>
-          <button type="button">Cumpără</button>
+          <Button className={`px-5 py-2 ${style.button}`}>
+            <Link href="/magazin">
+              <a href="#" className={`${style.buttonText}`}>
+                Cumpără
+              </a>
+            </Link>
+          </Button>
         </div>
-      </animated.div>
+      </div>
     </div>
   );
 }
