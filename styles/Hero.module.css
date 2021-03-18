@@ -2,6 +2,8 @@
   min-height: 90vh;
   width: 100%;
   background: url("/Hero-Image.png");
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 .container {
   min-width: 95%;
