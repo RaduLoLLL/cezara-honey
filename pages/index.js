@@ -1,5 +1,6 @@
 import Head from "next/head";
 import Hero from "../components/Hero";
+import Main from "../components/Main";
 export default function Home() {
   return (
     <div>
@@ -8,6 +9,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Hero />
+      <Main />
     </div>
   );
 }
